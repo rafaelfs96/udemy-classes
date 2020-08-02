@@ -1,0 +1,44 @@
+.Mega {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Mega label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.Mega input {
+  font-size: 1.4rem;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.Mega button {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.Mega .numeros {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Mega .numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  background-color: #1499d3;
+  color: #fff;
+}
+
+.Mega .numero:after {
+  content: attr(data-num);
+}
